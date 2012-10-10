@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "Lint!"
   s.authors     = ["Mike Ball", "John Riviello", "Jen Valure", "Mike Rottina"]
   s.email       = 'john_riviello@comcast.com'
-  s.files       = ["lib/csslint.rb",
+  s.files       = ["lib/css_lint.rb",
                    "lib/vendor/csslint-rhino.js",
                    "lib/vendor/js.jar"
                   ]
