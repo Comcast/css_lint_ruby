@@ -25,7 +25,7 @@ Or:
 
 Run Rspec tests:
 
-    rspec spec/lib/css_lint_spec.rb
+    rake
 
 Browse code coverage via [simplecov](https://github.com/colszowka/simplecov):
 
