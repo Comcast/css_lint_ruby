@@ -3,7 +3,7 @@ require 'bundler/setup'
 require 'simplecov'
 SimpleCov.start
 
-require 'compass-lint' # and any other gems you need
+require_relative '../lib/css_lint'
 
 RSpec.configure do |config|
   # some (optional) config here

@@ -17,7 +17,7 @@ module CSSLint
     end
 
     def error_message
-      'Must provide compass-lint a CSS file or directory'
+      'Must provide csslint a CSS file or directory'
     end
 
     # NOTE: not currently used but left in for now
