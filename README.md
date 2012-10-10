@@ -8,6 +8,7 @@ Nothing too fancy and kinda rough around the edges...csslint was made during Com
   
     git clone https://github.com/comcast/csslint
     cd csslint
+    bundle install
     gem build css_lint.gemspec
 
 ## Usage
@@ -19,3 +20,13 @@ Basic command line usage:
 Or:
 
     csslint <some_file.css>
+
+## Tests
+
+Run Rspec tests:
+
+    rspec spec/lib/css_lint_spec.rb
+
+Browse code coverage via [simplecov](https://github.com/colszowka/simplecov):
+
+    open coverage/index.html
