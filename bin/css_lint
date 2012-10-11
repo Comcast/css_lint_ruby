@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'csslint'
+require 'css_lint'
 lint = CSSLint::Lint.new(*ARGV)
 lint.execute
