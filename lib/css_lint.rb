@@ -20,12 +20,6 @@ module CSSLint
       'Must provide csslint a CSS file or directory'
     end
 
-    # NOTE: not currently used but left in for now
-    # def download_csslint
-    #  `curl -O https://raw.github.com/stubbornella/csslint/master/lib/js.jar > #{@gem_vendor_dir}/js.jar`
-    #  `curl -O https://raw.github.com/stubbornella/csslint/master/release/csslint-rhino.js > #{@gem_vendor_dir}/csslint-rhino.js`
-    # end
-    
     def get_java_path
       `which java`.to_s.rstrip
     end
