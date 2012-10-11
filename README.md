@@ -9,17 +9,18 @@ Nothing too fancy and kinda rough around the edges...csslint was made during Com
     git clone https://github.com/comcast/csslint
     cd csslint
     bundle install
+    rake
     gem build css_lint.gemspec
 
 ## Usage
 
 Basic command line usage:
   
-    csslint <some_css_directory>
+    css_lint <some_css_directory>
 
 Or:
 
-    csslint <some_file.css>
+    css_lint <some_file.css>
 
 ## Tests
 
