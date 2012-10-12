@@ -39,9 +39,9 @@ describe CSSLint do
     end
     
     describe "#error_message" do
-      it "returns the string 'Must provide compass-lint a CSS file or directory'" do
+      it "returns the string 'Must provide css_lint a CSS file or directory'" do
         @cl = CSSLint::Lint.new
-        @cl.error_message.should == "Must provide csslint a CSS file or directory"
+        @cl.error_message.should == "Must provide css_lint a CSS file or directory"
       end
     end
     
