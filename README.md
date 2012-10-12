@@ -1,6 +1,6 @@
 # css_lint_ruby
 
-A rudimentary gem that wraps the command line Rhino version of Nicole Sullivan's [csslint](http://csslint.net).
+A rudimentary gem that wraps the command line Rhino version of Nicholas C. Zakas and Nicole Sullivan's [csslint](http://csslint.net).
 
 Nothing too fancy and kinda rough around the edges...css_lint was made during Comcast Interactive Media's March 2012 Labweek.
 

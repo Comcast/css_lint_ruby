@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name        = 'css_lint'
   s.version     = '0.0.0'
   s.date        = '2012-04-28'
-  s.summary     = "Nicole Sullivan's CSS Lint available as a Gem."
+  s.summary     = "Nicholas C. Zakas and Nicole Sullivan's CSS Lint available as a Gem."
   s.description = "Lint your CSS."
   s.authors     = ["Mike Ball", "John Riviello", "Jen Valure", "Mike Rottina"]
   s.email       = 'john_riviello@comcast.com'
