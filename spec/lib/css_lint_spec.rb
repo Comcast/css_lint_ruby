@@ -91,6 +91,16 @@ describe CSSLint do
           @cl.should_receive("system").with("java -jar /fake_vendor_dir/js.jar /fake_vendor_dir/csslint-rhino.js $@ foo")
           @cl.run_lint
         end
+
+        it "Executes the command to return the version of CSS Lint if --version is passed as an option" do
+          File.stub!(:join).and_return('/fake_vendor_dir')
+          @cl = CSSLint::Lint.new '--version'
+          @cl.stub!(:get_java_path).and_return('java installed')
+          @cl.should_receive(:get_java_path)
+          @cl.should_receive("system").with("java -jar /fake_vendor_dir/js.jar /fake_vendor_dir/csslint-rhino.js $@ --version")
+          @cl.run_lint
+        end
+
       end
     end
   end
