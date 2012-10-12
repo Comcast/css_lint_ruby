@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
                   ]
   s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n") 
   s.homepage    = 'http://github.com/comcast'
-  s.executables = ["csslint"]
+  s.executables = ["css_lint"]
   s.require_paths = ["lib"]
   s.add_development_dependency 'rspec', '2.4'
   s.add_development_dependency 'simplecov'
