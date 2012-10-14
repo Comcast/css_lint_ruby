@@ -1,19 +1,32 @@
 module CSSLint
   class Lint
     attr_reader :gem_vendor_dir
+    attr_reader :args
     attr_reader :css
     attr_reader :options
     
-    def initialize(*css_directories)
+    def initialize(*args)
       @gem_vendor_dir = File.join(File.dirname(__FILE__), 'vendor')
-      css_directories.empty? ? @css = error_message : @css = css_directories
+      if args.empty?
+        @css = error_message
+      else
+        @args = []
+        @css = []
+        args.each do |arg|
+          arg.start_with?("--") ? @args << arg : @css << arg
+        end
+      end
     end
 
-    def execute(*options)
+    def execute(*compass_options)
       if @css == error_message
         puts @css
       else
-        run_lint(*options)
+        if !compass_options.empty?
+          run_lint(*compass_options)
+        else
+          run_lint(@args)
+        end
       end
     end
 
@@ -31,8 +44,12 @@ module CSSLint
       
       options.empty? ? @options = '' : @options = options.join(' ') + ' '
 
-      @css.each do |item|
-        system("java -jar #{@gem_vendor_dir}/js.jar #{@gem_vendor_dir}/csslint-rhino.js $@ #{@options}#{item}")
+      if !@css.empty?
+        @css.each do |item|
+          system("java -jar #{@gem_vendor_dir}/js.jar #{@gem_vendor_dir}/csslint-rhino.js $@ #{@options}#{item}")
+        end
+      else
+        system("java -jar #{@gem_vendor_dir}/js.jar #{@gem_vendor_dir}/csslint-rhino.js $@ #{@options}")
       end
     end
   end

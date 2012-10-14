@@ -97,8 +97,8 @@ describe CSSLint do
           @cl = CSSLint::Lint.new '--version'
           @cl.stub!(:get_java_path).and_return('java installed')
           @cl.should_receive(:get_java_path)
-          @cl.should_receive("system").with("java -jar /fake_vendor_dir/js.jar /fake_vendor_dir/csslint-rhino.js $@ --version")
-          @cl.run_lint
+          @cl.should_receive("system").with("java -jar /fake_vendor_dir/js.jar /fake_vendor_dir/csslint-rhino.js $@ --version ")
+          @cl.execute('--version')
         end
 
       end
