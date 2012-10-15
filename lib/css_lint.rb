@@ -46,10 +46,10 @@ module CSSLint
 
       if !@css.empty?
         @css.each do |item|
-          system("java -jar #{@gem_vendor_dir}/js.jar #{@gem_vendor_dir}/csslint-rhino.js $@ #{@options}#{item}")
+          system("java -jar #{@gem_vendor_dir}/js.jar #{@gem_vendor_dir}/csslint-rhino.js #{@options}#{item}")
         end
       else
-        system("java -jar #{@gem_vendor_dir}/js.jar #{@gem_vendor_dir}/csslint-rhino.js $@ #{@options}")
+        system("java -jar #{@gem_vendor_dir}/js.jar #{@gem_vendor_dir}/csslint-rhino.js #{@options}")
       end
     end
   end
