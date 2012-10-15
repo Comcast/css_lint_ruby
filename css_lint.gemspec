@@ -1,11 +1,10 @@
 Gem::Specification.new do |s|
   s.name        = 'css_lint'
-  s.version     = '0.9.9'
-  s.date        = '2012-04-28'
+  s.version     = '0.9.9.0'
+  s.date        = '2012-10-14'
   s.summary     = "Nicholas C. Zakas and Nicole Sullivan's CSS Lint available as a Gem."
   s.description = "Lint your CSS."
   s.authors     = ["Mike Ball", "John Riviello", "Jen Valure", "Mike Rottina"]
-  s.email       = 'john_riviello@comcast.com'
   s.files       = ["lib/css_lint.rb",
                    "lib/vendor/csslint-rhino.js",
                    "lib/vendor/js.jar"
