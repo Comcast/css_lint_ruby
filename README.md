@@ -1,6 +1,6 @@
-[![Build Status](https://secure.travis-ci.org/Comcast/css_lint_ruby.png)](http://travis-ci.org/Comcast/css_lint_ruby)
-
 # css_lint_ruby
+
+[![Build Status](https://secure.travis-ci.org/Comcast/css_lint_ruby.png)](http://travis-ci.org/Comcast/css_lint_ruby) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/Comcast/css_lint_ruby)
 
 A rudimentary gem that wraps the command line Rhino version of Nicholas C. Zakas and Nicole Sullivan's [csslint](http://csslint.net).
 
