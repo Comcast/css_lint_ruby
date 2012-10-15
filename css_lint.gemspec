@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'css_lint'
-  s.version     = '0.9.9.0'
+  s.version     = '0.9.9.1'
   s.date        = '2012-10-14'
   s.summary     = "Nicholas C. Zakas and Nicole Sullivan's CSS Lint available as a Gem."
   s.description = "Lint your CSS."
