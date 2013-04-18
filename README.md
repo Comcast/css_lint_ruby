@@ -4,16 +4,16 @@
 
 A rudimentary gem that wraps the command line Rhino version of Nicholas C. Zakas and Nicole Sullivan's [csslint](http://csslint.net).
 
-Nothing too fancy and kinda rough around the edges...css_lint was made during Comcast Interactive Media's March 2012 Labweek.
+Nothing too fancy and kinda rough around the edges...css_lint was made during Comcast Interactive Media's May 2012 Labweek as a dependency for using [CSS Lint for Sass & Compass](http://comcast.github.io/compass-csslint/).
 
 ## Installation
   
     git clone https://github.com/comcast/csslint
     cd csslint
     bundle install
-    rake
+    bundle exec rake
     gem build css_lint.gemspec
-    gem install css_lint-0.9.9.1.gem
+    gem install css_lint-0.9.10.0.gem
 
 ## Usage
 
