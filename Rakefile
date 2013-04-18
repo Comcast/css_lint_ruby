@@ -15,12 +15,13 @@ task :download_csslint do
   require 'net/http'
   http = Net::HTTP.new(host_url.host, host_url.port)
   http.use_ssl = true
+  http.ssl_version = :TLSv1
   http.start do |http|
     dependencies.each do |dependency|
       body = http.get(dependency).body
       file_name = File.basename(dependency)
       vendor_dir = "lib/vendor"
-      mkdir(vendor_dir) unless File.directory? vendor_dir 
+      mkdir(vendor_dir) unless File.directory? vendor_dir
       File.open("#{vendor_dir}/#{file_name}", "w") do |file|
         file.write(body)
       end
