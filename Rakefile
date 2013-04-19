@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'rspec/core/rake_task'
+require 'bundler/gem_tasks'
 
 desc "Run Rspec tests."
 RSpec::Core::RakeTask.new(:spec) do |spec|
