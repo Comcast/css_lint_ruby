@@ -8,12 +8,12 @@ Nothing too fancy and kinda rough around the edges...css_lint was made during Co
 
 ## Installation
   
-    git clone https://github.com/comcast/csslint
-    cd csslint
+    git clone https://github.com/Comcast/css_lint_ruby.git
+    cd css_lint_ruby
     bundle install
     bundle exec rake
     gem build css_lint.gemspec
-    gem install css_lint-0.9.10.0.gem
+    gem install css_lint-0.9.10.1.gem
 
 ## Usage
 
