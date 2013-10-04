@@ -13,7 +13,7 @@ Nothing too fancy and kinda rough around the edges...css_lint was made during Co
     bundle install
     bundle exec rake
     gem build css_lint.gemspec
-    gem install css_lint-0.9.10.1.gem
+    gem install css_lint-0.10.0.0.gem
 
 ## Usage
 

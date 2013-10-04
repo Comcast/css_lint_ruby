@@ -1,3 +1,3 @@
 module CSSLint
-  VERSION = "0.9.10.1"
+  VERSION = "0.10.0.0"
 end

@@ -6,11 +6,12 @@ require 'css_lint/version'
 Gem::Specification.new do |s|
   s.name        = 'css_lint'
   s.version     = CSSLint::VERSION
-  s.date        = '2013-04-26'
+  s.date        = '2013-10-04'
   s.summary     = "Nicholas C. Zakas and Nicole Sullivan's CSS Lint available as a Gem."
   s.description = "Lint your CSS."
   s.authors     = ["Mike Ball", "John Riviello", "Jen Valure", "Mike Rottina"]
   s.homepage    = 'https://github.com/Comcast/css_lint_ruby'
+  s.license     = 'MIT'
 
   s.files       = ["lib/vendor/csslint-rhino.js", "lib/vendor/js.jar"] + `git ls-files`.split($/)
   s.test_files  = s.files.grep(%r{^(test|spec|features)/})
